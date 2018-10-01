@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:apps="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/status_vew"/>
+        <include layout="@layout/title_bar"/>
+
+        <com.konggeek.dnine.ctrl.role.view.TodayIncomeRingView
+            android:layout_width="@dimen/dp_230"
+            android:layout_height="@dimen/dp_230"
+            android:id="@+id/test"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:visibility="gone"
+            />
+        <com.konggeek.dnine.ctrl.role.view.TodayFlowBrokenLineView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_200"
+            android:layout_marginLeft="@dimen/dp_23"
+            android:layout_marginRight="@dimen/dp_23"
+            android:visibility="gone"
+            />
+
+        <com.konggeek.dnine.ctrl.role.view.NewIncomeRingView
+            android:layout_width="@dimen/dp_230"
+            android:layout_height="@dimen/dp_230"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:id="@+id/newtest"/>
+
+    </LinearLayout>
+
+</layout>
